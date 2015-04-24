@@ -2,7 +2,5 @@ studentsSignIn.controller('StudentsCtrl', function StudentsCtrl($scope, Students
 
   $scope.students = StudentsFactory.students;
   $scope.StudentsFactory = StudentsFactory;
-  // $scope.makePresence = function (student) {
-  //     student.presence = true;
-  // }
+  
 });
