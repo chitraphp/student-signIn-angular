@@ -1,7 +1,7 @@
 <a ui-sref="signIn" >Sign in</a>|
 <a ui-sref="presence" >who's here</a>
 
-<div ng-show="students.length">
+<div ng-controller="StudentsCtrl" ng-show="students.length">
         <h2>Student List</h2>
         <ul>
           <li ng-repeat="item in students">
