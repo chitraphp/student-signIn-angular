@@ -1,0 +1,10 @@
+<div ng-show="students.length">
+        <h2>Student List</h2>
+        <ul>
+          <li ng-repeat="item in students">
+            {{item.name}}
+            <a ng-show=!item.presence ng-click=item.presence="true" class="btn btn-primary btn-xs active" role="button">Sign in</a>
+            <a ng-hide=!item.presence class="btn btn-primary btn-xs active" role="button">Sign out</a>
+          </li>
+        </ul>
+</div>
