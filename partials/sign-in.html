@@ -6,8 +6,8 @@
         <ul>
           <li ng-repeat="item in students">
             {{item.name}} {{item.presence}}
-            <!-- <a ui-sref="students.presence({name1:item.name})" ng-show=!item.presence  class="btn btn-primary btn-xs active" role="button">Sign in</a>
-            <a ng-hide=!item.presence class="btn btn-primary btn-xs active" role="button">Sign out</a> -->
+            <a ng-show=!(item.presence)  class="btn btn-primary btn-xs active" role="button" ng-click="item.presence=true">Sign in</a>
+            <a ng-hide=!(item.presence) class="btn btn-primary btn-xs active" role="button">Sign out</a>
           </li>
         </ul>
 </div>
